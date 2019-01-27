@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deploymenet
+kind: Deployment
 metadata: 
   name: client-deployment
 spec: 
