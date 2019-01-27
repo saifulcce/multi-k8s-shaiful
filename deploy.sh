@@ -12,8 +12,6 @@ docker push saifulcce/multi-worker:$SHA
 
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=saifulcce/multi-server:$SHA
-kubectl set image deployments/client-deployment client=saifulcce/multi-client:$S
-HA
-kubectl set image deployments/worker-deployment worker=saifulcce/multi-worker:$S
-HA
+kubectl set image deployments/client-deployment client=saifulcce/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=saifulcce/multi-worker:$SHA
 
